@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../images/agenda.png" type="png" />
+    <script src="../js/sweetalert2.all.js"></script>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/sweetalert2.css" id="styleSweet" />
+    <script type="module" src="../js/index.js" defer></script>
+    <title>Agenda de Contactos</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="./agenda.html"><span>Agenda de Contactos</span></a>
+        <div class="nav-bar">
+          <button id="mode" class="btn">
+            <img alt="Modo-Claro-Oscuro" id="mode_img" class="imgwhite" />
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="content">
+        <div class="option">
+          <form>
+            <div>
+              <input type="text" name="first_name" placeholder="Nombre" class="nombre" id="name" />
+              <img class="nombre" alt="Nombre" />
+            </div>
+            <div>
+              <input type="text" name="phone" placeholder="Teléfono" class="phone" id="phone"/>
+              <img class="phone" alt="Teléfono" />
+            </div>
+            <div>
+              <input type="text" name="email" placeholder="Correo electrónico" class="email" id="email" />
+              <img class="email" alt="Correo" />
+            </div>
+            <button id="agregar"><img class="agregar" alt="Agregar" /></button>
+            <button id="edit" class="btn1"><img class="editar" alt="Editar" /></button>
+          </form>
+        </div>
+      </section>
+      <section class="content2">
+        <div class="cont">
+            <span>Contactos <label id="cont"></label></span>
+        </div>
+        <div class="msj" id="msj">
+            <span>No hay Contactos</span>
+        </div>
+        <div class="contactos" id="contactos">
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Agenda de Contactos</span>
+      <section class="members">
+        <div class="github">
+          <a href="https://github.com/JMCA2805"
+            >Jose M. Camacho:
+            <img class="github" alt="Logo de Github" /> JMCA2805
+          </a>
+        </div>
+      </section>
+      <div class="copy">
+        <small> Agenda de Contactos &copy; 2023 </small>
+      </div>
+    </footer>
+  </body>
+</html>
