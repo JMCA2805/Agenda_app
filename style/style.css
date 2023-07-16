@@ -1,0 +1,523 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: all ease 1s;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  all: unset;
+}
+
+/* Barra de navegación */
+header {
+  z-index: 2;
+}
+
+nav.nav {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  box-shadow: 0 4px 5px -1px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-color: white;
+  transition: all ease 1s;
+}
+
+nav.nav a {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 23px;
+  color: black;
+  width: 200px;
+  transition: all ease 1s;
+}
+
+nav.nav a span {
+  font-family: Arial Black;
+  white-space: nowrap;
+}
+
+/* Modo Claro y Oscuro */
+div.nav-bar {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  height: 100%;
+  width: 100%;
+}
+
+div.nav-bar button.btn {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgb(250, 250, 250);
+  cursor: pointer;
+  border-radius: 100%;
+  transition: all ease 1s;
+}
+
+div.nav-bar button img.imgwhite {
+  height: 80%;
+  content: url(../images/moon.png);
+  transition: all ease 1s;
+}
+
+/* Contenido */
+section.content {
+  background-color: white;
+  z-index: 1;
+  transition: all ease 1s;
+}
+
+section div.option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Contenido 2 */
+section.content2 {
+  background-color: white;
+  transition: all ease 1s;
+}
+
+div.option form {
+  display: flex;
+}
+
+div.option form div {
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  flex-direction: row-reverse;
+}
+
+div.option form div input {
+  width: 200px;
+  height: 100%;
+  padding: 0 10px;
+  border-radius: 20px;
+  border: 2px solid black;
+  transition: all ease 1s;
+}
+
+form div input::placeholder {
+  color: black;
+  transition: all ease 1s;
+}
+
+img.nombre {
+  width: 30px;
+  display: flex;
+  content: url(../images/contac_black.png);
+  height: 100%;
+  transition: all ease 1s;
+  margin-right: 5px;
+}
+
+img.phone {
+  width: 30px;
+  display: flex;
+  content: url(../images/phone_black.png);
+  height: 100%;
+  transition: all ease 1s;
+  margin-right: 5px;
+}
+
+img.email {
+  width: 30px;
+  display: flex;
+  content: url(../images/email_black.png);
+  height: 100%;
+  transition: all ease 1s;
+  margin-right: 5px;
+}
+
+div.option form button {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background-color: black;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: all ease 1s;
+}
+
+div.option form button.btn1 {
+  height: 30px;
+  width: 30px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  background-color: black;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: all ease 1s;
+}
+
+div.option form button.btn1:hover {
+  transition: none;
+  background-color: rgb(245, 140, 21);
+  border-color: rgb(245, 140, 21);
+}
+
+div.option form button:hover {
+  transition: none;
+  background-color: rgb(245, 140, 21);
+}
+
+img.agregar {
+  width: 30px;
+  display: flex;
+  content: url(../images/add_white.png);
+  height: 100%;
+  transition: all ease 1s;
+}
+
+img.editar {
+  width: 30px;
+  display: flex;
+  content: url(../images/edit_white.png);
+  height: 100%;
+  transition: all ease 1s;
+}
+
+div.cont {
+  padding: 5px 20px;
+  font-size: small;
+  font-weight: bold;
+  height: 15px;
+}
+
+div.msj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 40px;
+  height: 100%;
+}
+
+input.nombre:focus + img.nombre {
+  content: url(../images/contac_active.png);
+}
+input.phone:focus + img.phone {
+  content: url(../images/phone_active.png);
+}
+input.email:focus + img.email {
+  content: url(../images/email_active.png);
+}
+
+div.option form div input:focus {
+    transition: none;
+  border-color: orange;
+}
+
+/* Contenido 3 */
+
+section.content3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px 30px;
+    justify-content: center;
+}
+
+div.card {
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid orange;
+    margin: 7px 20px;
+    transition: all ease 1s;
+}
+
+div.div_inf {
+    display: flex;
+    text-align: center;
+}
+
+div.div_inf div.title{
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    font-weight: bold;
+    width: 80px;
+}
+
+img.delete {
+  content: url(../images/delete_black.png);
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+div.opc_img {
+  height: 25px;
+  display: flex;
+  justify-content: right;
+}
+
+img.edit {
+  content: url(../images/edit_black.png);
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 100%;
+}
+
+img.delete:hover {
+  background-color: rgb(245, 140, 21);
+}
+
+img.edit:hover {
+  background-color: rgb(245, 140, 21);
+}
+
+/* footer */
+footer.footer {
+  overflow: hidden;
+  padding: 10px 20px 10px 20px;
+  margin-top: auto;
+  background-color: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all ease 1s;
+}
+
+section.members div.github a {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  color: black;
+  transition: all ease 1s;
+}
+
+img.github {
+  height: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+  content: url("../images/github_black.png");
+  transition: all ease 1s;
+}
+
+footer.footer span {
+  font-family: Arial Black;
+}
+
+footer.footer div.copy {
+  display: flex;
+  justify-content: center;
+}
+
+/* Modo Oscuro */
+
+body.dark section.content {
+  background-color: black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.dark nav.nav {
+  box-shadow: 0 4px 5px -1px rgba(255, 255, 255, 0.4);
+  background-color: black;
+}
+
+body.dark nav.nav a {
+  color: white;
+}
+
+body.dark div.nav-bar button.btn {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background-color: black;
+}
+
+body.dark div.nav-bar button img.imgwhite {
+  content: url(../images/sun.png);
+}
+
+body.dark footer.footer {
+  background-color: rgb(0, 0, 0);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+body.dark img.github {
+  content: url("../images/github_white.png");
+}
+
+body.dark section.members div.github a {
+  color: white;
+}
+
+body.dark {
+  background-color: black;
+}
+
+body.dark section.content2 {
+  background-color: black;
+}
+
+body.dark div.option form button {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgb(250, 250, 250);
+}
+
+body.dark div.option form button.btn1 {
+  border: 3px solid white;
+  background-color: rgb(250, 250, 250);
+}
+
+body.dark img.nombre {
+  content: url(../images/contac_white.png);
+}
+
+body.dark img.phone {
+  content: url(../images/phone_white.png);
+}
+
+body.dark img.email {
+  content: url(../images/email_white.png);
+}
+
+body.dark img.agregar {
+  content: url(../images/add_black.png);
+}
+
+body.dark img.editar {
+  content: url(../images/edit_black.png);
+}
+
+body.dark form div input {
+  border-color: white;
+  background-color: rgb(40, 40, 40);
+  color: white;
+}
+
+body.dark form div input::placeholder {
+  color: white;
+}
+
+body.dark div.option form button:hover {
+  transition: none;
+  background-color: rgb(245, 140, 21);
+}
+
+body.dark div.option form button.btn1:hover {
+  transition: none;
+  background-color: rgb(245, 140, 21);
+  border-color: rgb(245, 140, 21);
+}
+
+body.dark div.cont {
+  color: white;
+}
+
+body.dark div.msj {
+  color: white;
+}
+
+body.dark input:focus {
+    transition: none;
+  border-color: orange;
+}
+
+body.dark div.div_inf {
+    color: white;
+}
+
+body.dark img.delete {
+  content: url(../images/delete_white.png);
+}
+
+body.dark img.edit {
+  content: url(../images/edit_white.png);
+}
+
+body.dark img.delete:hover {
+  background-color: rgb(245, 140, 21);
+}
+
+body.dark img.edit:hover {
+  background-color: rgb(245, 140, 21);
+}
+
+/* Responsive */
+
+
+@media  (max-width : 1000px) {
+
+  div.option form div input {
+    width: 150px;
+  }
+
+  section.content3 {
+    padding: 15px 0px;
+  }
+}
+
+@media  (max-width : 500px) {
+
+  nav.nav a span{
+    font-size: 20px;
+  }
+  
+  section div.option {
+    height: 230px;
+  }
+
+  div.option form{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.option form div {
+    margin-bottom: 15px;
+  }
+
+  div.option form button {
+    border-radius: 20px;
+    margin-left: 35px;
+    width: 224px;
+  }
+
+  div.option form button.btn1 {
+    border-radius: 20px;
+    margin-left: 35px;
+    width: 224px;
+  }
+
+  div.msj {
+    font-size: 20px;
+  }
+
+  section.content3{
+    flex-direction: column;
+    padding: 0;
+  }
+
+  div.card{
+    margin: 5px 0;
+  }
+
+}
